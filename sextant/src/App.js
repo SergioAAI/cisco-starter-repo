@@ -1,6 +1,7 @@
 import Banner from './components/banner';
-import './App.css';
 import Exhibit from './components/exhibit';
+import './App.css';
+import Address from './components/address';
 
 function App() {
   return (
@@ -8,15 +9,19 @@ function App() {
       <Banner title={
         'Sextant'
       } />
-      <Exhibit header={"Exhibit 1"}>
-        Hi
-      </Exhibit>
-      <Exhibit header={"Exhibit 1"}>
-        Hi
-      </Exhibit>
-      <Exhibit header={"Exhibit 1"}>
-        Hi
-      </Exhibit>
+      <div style={{
+        display: "flex",
+        flexWrap: "wrap",
+        alignContent: 'center',
+        justifyContent: 'center',
+      }}>
+        <Exhibit header={"IPV4"}>
+          <Address ipType={"ipv4"} />
+        </Exhibit>
+        <Exhibit header={"IPV6"}>
+          <Address ipType={"ipv6"} />
+        </Exhibit>
+      </div>
 
     </>
   );

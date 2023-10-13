@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './exhibit.module.css'
 
 const Exhibit = ({ header, children }) => {
