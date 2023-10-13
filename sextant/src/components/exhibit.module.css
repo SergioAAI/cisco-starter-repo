@@ -8,7 +8,9 @@
   text-align: center;
   margin: 16px;
   width: 20%;
+  word-wrap: break-word; /* added property */
 }
+
 .header {
   font-size: 1.5rem;
   text-decoration: underline;
