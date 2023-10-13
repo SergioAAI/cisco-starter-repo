@@ -16,8 +16,7 @@ const Latency = () => {
     }
 
     client.onmessage = (message) => {
-      setTime(new Date(parseInt(message.data)).getTime())
-      setMyTime(new Date().getTime())
+      setTime(new Date().getTime() - message.data)
     }
 
 
@@ -26,7 +25,7 @@ const Latency = () => {
 
 
   return (
-    <div>{myTime - time}</div>
+    <div>{time}</div>
   )
 }
 
